@@ -12,6 +12,12 @@
 ], 'root') should return 9
 */
 
-function countVeg() {}
+function countVeg(vegArr, vegToCount = 0) {
+
+  const vegPresent = vegArr.filter(veg => veg.name === vegToCount )
+
+  return vegPresent.length === 0 ? 0 : vegPresent[0].quantity
+
+}
 
 module.exports = countVeg;

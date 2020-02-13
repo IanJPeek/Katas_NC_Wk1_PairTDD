@@ -1,8 +1,7 @@
 const {expect} = require ("chai")
-
 const sumDigits = require('../katas/sum-digits');
 
-describe.only('sumDigits', () => {
+describe('sumDigits', () => {
   it('returns the number when passed a single digit number', () => {
     expect(sumDigits(7)).to.equal(7)
   });

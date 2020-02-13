@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const getCentury = require('../katas/get-century');
 
-describe.only('getCentury', (year) => {
+describe('getCentury', (year) => {
   it('takes a year between 0 and 99 & returns "1st"', () => {
     expect(getCentury(5)).to.equal("1st")
     expect(getCentury(17)).to.equal("1st");

@@ -7,6 +7,16 @@
     --> 6
 */
 
-function sumDigits() {}
+function sumDigits(num) {
+
+let total = 0
+const numbers = (num.toString().split(""))
+
+const totalMap = numbers.map(number => number !== "." ?total += +number : ".")
+const grandTotal = totalMap[totalMap.length-1]
+
+return grandTotal
+
+}
 
 module.exports = sumDigits;

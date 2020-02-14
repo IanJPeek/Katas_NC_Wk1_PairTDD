@@ -20,6 +20,22 @@ should return:
 ]
 */
 
-function orderVeg() {}
+function orderVeg(vegArray) {
+
+  if (vegArray.length < 2) return vegArray;
+
+  vegArray.sort(function(a,b){return a.quantity-b.quantity})
+
+  console.log(vegArray)
+  return vegArray
+
+}
+
+// myArray.sort(function(a, b) {
+//   return a.distance - b.distance;
+// });
+
+// points.sort(function(a, b){return a-b});
+
 
 module.exports = orderVeg;

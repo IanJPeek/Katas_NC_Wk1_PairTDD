@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const orderVeg = require("../katas/order-veg");
 
-describe.only("orderVeg", vegArray => {
+describe("orderVeg", vegArray => {
   it("returns an empty array when given an empty array", () => {
     expect(orderVeg([])).to.eql([]);
   });

@@ -20,7 +20,9 @@ function getCentury(year) {
   if (lastDigit == 3) {
     return "" + adjustedNum + "rd";
   }
-  if (lastDigit !== (1 || 2 || 3)) {
+  // if (lastDigit !== (1 || 2 || 3)) 
+  else
+  {
     return "" + adjustedNum + "th";
   }
 

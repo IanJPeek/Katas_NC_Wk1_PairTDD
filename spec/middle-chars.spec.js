@@ -1,7 +1,7 @@
 const { expect } = require("chai");
 const middleChar = require("../katas/middle-char");
 
-describe.only("middleChar", str => {
+describe("middleChar", str => {
   it("returns a single letter when given a one-letter string", () => {
     expect(middleChar("a")).to.equal("a");
   });

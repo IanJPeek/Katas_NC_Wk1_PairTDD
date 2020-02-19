@@ -26,7 +26,6 @@ function orderVeg(vegArray) {
 
   vegArray.sort(function(a,b){return a.quantity-b.quantity})
 
-  console.log(vegArray)
   return vegArray
 
 }

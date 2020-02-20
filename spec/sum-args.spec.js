@@ -1,7 +1,7 @@
 const {expect} = require("chai")
 const sumArgs = require('../katas/sum-args');
 
-describe.only('sumArgs', () => {
+describe('sumArgs', () => {
   it('should return 0 when passed no arguments', () => {
     expect(sumArgs()).to.equal(0)
   });
@@ -14,5 +14,6 @@ describe.only('sumArgs', () => {
   it('should return the total when passed many arguments', () => {
     expect(sumArgs(1,2,3,4,5)).to.equal(15);
     expect(sumArgs(1, 2, 3, 4, 5,6,7,8,9)).to.equal(45);
+    expect(sumArgs(-1, 2, -3, 4, -5, 6, -7, 8, -9, 10)).to.equal(5);
   });
 });
